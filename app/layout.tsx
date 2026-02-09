@@ -1,11 +1,8 @@
 import React from "react"
 import type { Metadata, Viewport } from "next"
-import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 
 import "./globals.css"
-
-const _inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Nigeria Rental Assistant",
