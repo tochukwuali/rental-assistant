@@ -105,6 +105,9 @@ function NetworkErrorFallback({
 }) {
   const isNetworkError =
     error?.message?.toLowerCase().includes("network") ||
+    error?.message?.toLowerCase().includes("cors") ||
+    error?.message?.toLowerCase().includes("chunked") ||
+    error?.message?.toLowerCase().includes("fetch") ||
     error?.name === "TypeError"
 
   return (
